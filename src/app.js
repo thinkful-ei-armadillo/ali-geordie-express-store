@@ -141,8 +141,8 @@ app.delete('/user/:userId', (req, res) => {
   users.splice(index, 1);
 
   res
-         .status(204)
-         .end();
+    .status(204)
+    .end();
 });
 
 app.use(function errorHandler(error, req, res, next) {
